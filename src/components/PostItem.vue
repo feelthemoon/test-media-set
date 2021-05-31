@@ -14,7 +14,7 @@
     </div>
     <div class="post__footer">
       <div class="post__date">{{ post.date }}</div>
-      <button class="post__likes" @click="riseLikes(post.id)">
+      <button class="post__likes" @click="changeLikesCount(post.id)">
         <img src="@/assets/img/like.svg" alt="" />
         <span class="post__likes-count">{{ post.like }}</span>
       </button>
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     ...mapActions(["likePost"]),
-    async riseLikes(id) {
+    async changeLikesCount(id) {
       try {
         await this.likePost(id);
       } catch (error) {

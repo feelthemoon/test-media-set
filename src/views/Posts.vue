@@ -1,15 +1,15 @@
 <template>
   <section class="posts">
-    <card-item v-for="post in posts" :key="post.id" :post="post"></card-item>
+    <post-item v-for="post in posts" :key="post.id" :post="post"></post-item>
   </section>
 </template>
 <script>
-import CardItem from "@/components/CardItem.vue";
+import PostItem from "@/components/PostItem.vue";
 import { createNamespacedHelpers } from "vuex";
 const { mapActions, mapState } = createNamespacedHelpers("posts");
 export default {
   components: {
-    CardItem,
+    PostItem,
   },
   async created() {
     await this.getPosts();
