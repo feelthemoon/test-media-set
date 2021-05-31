@@ -104,6 +104,15 @@ export default {
     background-color: transparent;
     border: none;
     outline: transparent;
+    img {
+      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &:active {
+      img {
+        transform: scale(1.5);
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+    }
     &-count {
       font-size: 12px;
       line-height: 22px;
