@@ -1,24 +1,22 @@
-# testvue
+# Тестовое задание на позицию frontend-разработчика в компанию Медиасеть
 
-## Project setup
+## Установка необходимых зависимостей
 ```
 yarn install
+yarn global add json-server
 ```
 
-### Compiles and hot-reloads for development
+### Запуск приложения и json-server
 ```
-yarn serve
+json-server --watch db.json
+```
+Далее вставьте url на json-server в локальный файл .env, в переменную окружения,
+с таким же именем, как .env.example
+```
+yarn server
 ```
 
-### Compiles and minifies for production
+### Сборка проекта в продакшн
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
