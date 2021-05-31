@@ -13,7 +13,7 @@ json-server --watch db.json
 Далее вставьте url на json-server в локальный файл .env, в переменную окружения,
 с таким же именем, как .env.example
 ```
-yarn server
+yarn serve
 ```
 
 ### Сборка проекта в продакшн
